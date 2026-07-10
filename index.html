@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>生氣兔與開心兔｜一起說故事 EP85 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mint:#CFE3CC;
+    --mint-deep:#BDDABB;
+    --paper:#FDFBF3;
+    --ink:#2C261E;
+    --angry:#C65A50;
+    --happy:#C08A2E;
+    --farmer:#5E8C5A;
+    --line:#E4DECB;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--mint);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(44,38,30,.15);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    color:var(--ink);
+    opacity:.65;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 4px 14px rgba(44,38,30,.07);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--mint-deep);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.angry{background:var(--angry);}
+  .dot.happy{background:#EDD79F;border:1.5px solid var(--happy);}
+  .dot.farmer{background:var(--farmer);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 14px rgba(44,38,30,.07);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:var(--mint-deep);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 4px 14px rgba(44,38,30,.07);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.a{color:var(--angry);}
+  .sp.h{color:var(--happy);}
+  .sp.f{color:var(--farmer);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    opacity:.6;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+    opacity:.9;
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .cover{transition:transform .3s ease;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="生氣兔與開心兔 封面：磚紅色的生氣兔皺著眉，奶油黃色的開心兔開心地笑著"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1>生氣兔與開心兔</h1>
+    <div class="meta">
+      <span class="chip">EP85</span>
+      <span class="chip">廣播劇約 10 分鐘</span>
+      <span class="chip">改編自聽眾芯語、銘軒投稿</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>生氣兔和開心兔是住在兔子山腳下的好朋友。聽說山上新開了一間紅蘿蔔餐廳，兩人相約一起上山吃大餐。</p>
+    <p>一路上，生氣兔接連被石頭絆倒、踩進小溪弄濕鞋子、帽子還被大風吹走，每一次都氣得跳腳，覺得全世界都「故意」跟他作對；開心兔則總能換個角度想——把石頭搬開、脫鞋泡泡腳、追帽子當賽跑——讓倒霉事變成好玩的事。</p>
+    <p>沒想到抵達餐廳時卻空無一人，生氣兔氣得掉頭就走。留下來的開心兔這才發現，原來老闆農夫兔正在菜園裡，跟一根拔不出來的超巨大紅蘿蔔奮戰……一場香噴噴的紅蘿蔔大餐，最後能不能讓生氣兔也笑出來呢？</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot angry"></span><span><b>生氣兔</b>磚紅色。什麼事都先生氣，愛踢石頭、愛跺腳，覺得所有東西都「故意」欺負他。</span></li>
+      <li><span class="dot happy"></span><span><b>開心兔</b>奶油黃色。樂觀又有耐心，總能把壞事換個角度變成有趣的事。</span></li>
+      <li><span class="dot farmer"></span><span><b>農夫兔</b>紅蘿蔔餐廳老闆，種出超級巨大的紅蘿蔔，滿頭大汗也拔不出來。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《生氣兔與開心兔》，改編自芯語和銘軒提供的故事。</p>
+      <p class="n">在兔子山的山腳下，有兩棟白色的小房子，這兩棟小房子分別住著生氣兔和開心兔，他們兩個是非常要好的朋友。</p>
+      <p class="n">有一天晚上，開心兔打電話給生氣兔。</p>
+      <p><span class="sp a">生氣兔：</span>喂？</p>
+      <p><span class="sp h">開心兔：</span>喂？晚安啊！生氣兔！</p>
+      <p><span class="sp a">生氣兔：</span>晚安啊，開心兔，有什麼事嗎？</p>
+      <p><span class="sp h">開心兔：</span>聽說山上要開一間新的紅蘿蔔餐廳喔！餐廳的主人是農夫兔，他會用他從菜園裡剛拔出來的超好吃紅蘿蔔，做出新鮮美味的料理！</p>
+      <p><span class="sp a">生氣兔：</span>哇！聽起來很棒耶！</p>
+      <p><span class="sp h">開心兔：</span>一定很棒啊！我們明天一起去吃好不好？</p>
+      <p><span class="sp a">生氣兔：</span>好啊！</p>
+      <p><span class="sp h">開心兔：</span>那明天早上在我家集合，我們一起出發。</p>
+      <p><span class="sp a">生氣兔：</span>沒問題！</p>
+      <p class="n">第二天早上，開心兔在家裡等了好久，都等不到生氣兔。</p>
+      <p><span class="sp h">開心兔：</span>奇怪，生氣兔怎麼還沒來呢？</p>
+      <p class="n">開心兔決定去找生氣兔，他在前往生氣兔家的路上，看到了——</p>
+      <p><span class="sp a">生氣兔：</span>可惡！可惡！臭石頭！故意在這裡絆倒我！</p>
+      <p class="n">生氣兔用力地踢路上的石頭！</p>
+      <p><span class="sp a">生氣兔：</span>哎唷！好痛！臭石頭故意絆倒我、害我生氣，然後踢得我腳很痛！可惡！</p>
+      <p class="n">開心兔趕快跑去拉住生氣兔，他說</p>
+      <p><span class="sp h">開心兔：</span>好了好了，繼續踢石頭，會讓你的腳更痛，不是嗎？我們把石頭搬到旁邊，這樣回來的時候才不會又被絆倒。</p>
+      <p class="n">生氣兔覺得開心兔說得有道理，（<span class="sp x">兩兔：</span>嘿咻——）於是他們合力把石頭搬到路邊的草叢裡，生氣兔變得比較開心了。</p>
+      <p class="n">他們開始爬山，邊走邊想，紅蘿蔔餐廳會有什麼好吃的料理呢？</p>
+      <p><span class="sp h">開心兔：</span>應該會有紅蘿蔔派！</p>
+      <p><span class="sp a">生氣兔：</span>還會有紅蘿蔔濃湯！</p>
+      <p><span class="sp h">開心兔：</span>如果有紅蘿蔔麻糬就好了！</p>
+      <p><span class="sp a">生氣兔：</span>麻糬！！好棒喔！</p>
+      <p class="n">生氣兔興奮地跳起來！（踩到溪水裡）糟糕，他一不小心，踩到小溪裡，把鞋子都弄濕了！</p>
+      <p><span class="sp a">生氣兔：</span>可惡！可惡！臭小溪！故意在這裡把我的鞋子弄濕！（一直踩水）</p>
+      <p class="n">生氣兔生氣地在小溪裡跺腳，濺起的水花快把衣服也弄濕了。開心兔趕快跑去拉住生氣兔，他說</p>
+      <p><span class="sp h">開心兔：</span>好了好了，繼續踩水，到時候連衣服也濕掉。沒關係，我們把鞋子脫下來曬太陽，一下就乾了，趁這個時候坐下來休息，把腳泡在小溪裡，不是很舒服嗎？</p>
+      <p class="n">生氣兔覺得開心兔說得有道理，於是，他們把鞋子脫下來曬太陽，把腳泡在小溪裡踢踢水，他們都覺得好舒服，生氣兔變得比較開心了。</p>
+      <p class="n">等到他們曬乾鞋子、休息夠了之後，生氣兔和開心兔繼續爬山。他們經過一片大草原，突然，一陣大風吹來，把兩隻兔子的帽子吹走了！</p>
+      <p class="n">生氣兔邊追著帽子邊喊</p>
+      <p><span class="sp a">生氣兔：</span>可惡！可惡！臭風！故意把我的帽子吹走！！</p>
+      <p class="n">開心兔也邊追著帽子邊喊</p>
+      <p><span class="sp h">開心兔：</span>沒關係，我們剛剛休息夠了，現在剛好可以跟帽子賽跑，不是很有趣嗎？</p>
+      <p class="n">生氣兔覺得開心兔說得有道理，他們一起在大草原上跟帽子賽跑，最後撿回了帽子，牢牢地戴回頭上，生氣兔變得比較開心了。</p>
+      <p class="n">他們繼續前進，終於到了新開的紅蘿蔔餐廳，可是，不知道為什麼，餐廳裡一個人也沒有，開心兔和生氣兔等了半天，都沒有看到餐廳老闆農夫兔。</p>
+      <p><span class="sp a">生氣兔：</span>可惡！可惡！臭餐廳！根本就沒有開，故意害我走這麼遠的路！為什麼大家都故意要對我這麼壞！！！</p>
+      <p class="n">生氣兔好生氣，他扭頭就走，開心兔根本來不及安慰他。</p>
+      <p><span class="sp h">開心兔：</span>欸⋯⋯生氣兔⋯⋯等一下啦⋯⋯</p>
+      <p class="n">生氣兔一下子就跑掉了，只剩下開心兔在餐廳前面，他抓抓頭</p>
+      <p><span class="sp h">開心兔：</span>真奇怪，為什麼農夫兔不在呢？</p>
+      <p class="n">就在這個時候，開心兔聽到有人講話</p>
+      <p><span class="sp f">農夫兔：</span>欸？開心兔你來啦，太好了太好了！正好來幫我的忙！</p>
+      <p class="n">開心兔轉頭，看到滿頭大汗的農夫兔！原來，農夫兔在菜園裡種出了超級超級大的紅蘿蔔，他拔了好久好久，還是拔不出來。</p>
+      <p class="n">於是，開心兔跟著農夫兔到菜園，他們一起拔蘿蔔。（<span class="sp x">兩兔：</span>嘿咻、嘿咻、嘿～～～～咻）他們真的拔出了超級超級超級大的紅蘿蔔！</p>
+      <p><span class="sp f">農夫兔：</span>真是太感謝你了，開心兔，讓我用這個超巨大紅蘿蔔做出一桌美味的料理當作謝禮吧！</p>
+      <p><span class="sp h">開心兔：</span>真的嗎？那真是太好了！！</p>
+      <p class="n">開心兔開心到耳朵都豎起來了！但是，他突然想到一件事⋯⋯</p>
+      <p><span class="sp h">開心兔：</span>呃，我可以找我的朋友來吃嗎？</p>
+      <p><span class="sp f">農夫兔：</span>當然可以呀！</p>
+      <p class="n">聽到農夫兔這麼說，開心兔立刻跑回山下，他經過了大草原，跳過了小溪，他想跑去生氣兔的家，可是，在路上他就遇到生氣兔了。</p>
+      <p><span class="sp a">生氣兔：</span>可惡、可惡的臭石頭！ㄠ～我的腳好痛、可惡、可惡</p>
+      <p class="n">生氣兔又在踢石頭了。</p>
+      <p><span class="sp h">開心兔：</span>咦？奇怪，我們早上不是把石頭搬到路邊了嗎？為什麼你又被石頭絆倒了呢？</p>
+      <p><span class="sp a">生氣兔：</span>沒有啊，我沒有被石頭絆倒。</p>
+      <p><span class="sp h">開心兔：</span>那為什麼你要踢石頭？</p>
+      <p><span class="sp a">生氣兔：</span>因為餐廳沒開，我很生氣，所以我想回家，在路上我就覺得好生氣，想要踢東西，然後我想到我家的路上有一顆石頭可以踢，我就覺得有點開心，可是經過的時候發現石頭在路邊的草叢裡，我居然還要把它搬回路上才能踢！我真是太生氣了！石頭就是故意跑到草叢裡，害我還要把它搬出來踢！！！然後踢了腳又很痛！！！可惡的臭石頭！！</p>
+      <p class="n">開心兔看到生氣兔氣成這樣，忍不住笑了出來</p>
+      <p><span class="sp a">生氣兔：</span>你在笑什麼？你在笑我嗎？</p>
+      <p><span class="sp h">開心兔：</span>沒有啦～你不要再踢石頭了，這樣腳很痛，你跟我回去山上，農夫兔要煮大餐給我們吃！</p>
+      <p class="n">聽到有大餐，生氣兔的耳朵都豎起來了，他跟著開心兔一起爬山，這次，他有注意不要跳到小溪裡，經過大草原的時候，也記得用手壓著帽子，不讓大風吹走。生氣兔和開心兔又回到了紅蘿蔔餐廳。</p>
+      <p><span class="sp x">生氣兔、開心兔：</span>哇～～～～</p>
+      <p class="n">農夫兔煮了一頓紅蘿蔔大餐</p>
+      <p><span class="sp h">開心兔：</span>紅蘿蔔派！</p>
+      <p><span class="sp a">生氣兔：</span>紅蘿蔔濃湯！</p>
+      <p><span class="sp h">開心兔：</span>紅蘿蔔炒飯！</p>
+      <p><span class="sp a">生氣兔：</span>紅蘿蔔蛋糕！</p>
+      <p><span class="sp f">農夫兔：</span>還有喔——</p>
+      <p><span class="sp x">開心兔、生氣兔：</span>紅蘿蔔麻糬！！！！太棒了～～</p>
+      <p class="n">開心兔和生氣兔吃著美味的食物，他們都很開心。開心兔邊吃邊說</p>
+      <p><span class="sp h">開心兔：</span>今天真是完美的一天！</p>
+      <p class="n">生氣兔也邊吃邊說</p>
+      <p><span class="sp a">生氣兔：</span>這個紅蘿蔔一定是故意要長這麼大、害農夫兔拔不出來、害我以為餐廳沒開然後生氣！可惡，真是個臭蘿蔔！</p>
+      <p><span class="sp h">開心兔：</span>嗯？臭蘿蔔哪有這麼好吃？明明就是香蘿蔔！</p>
+      <p><span class="sp a">生氣兔：</span>對吼！可惡，他故意長得這麼香，害我說錯！臭香蘿蔔！</p>
+      <p><span class="sp h">開心兔：</span>哪有這種東西啦哈哈哈哈</p>
+      <p><span class="sp a">生氣兔：</span>哈哈哈哈哈</p>
+      <p class="n">開心兔笑了，生氣兔也笑了，生氣兔喜歡跟開心兔一起玩，因為他們可以一起變得很開心。</p>
+      <p class="n">這就是今天的故事《生氣兔與開心兔》，感謝芯語和銘軒的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
